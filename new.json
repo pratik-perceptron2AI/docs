@@ -1,0 +1,115 @@
+{
+    "$schema": "https://mintlify.com/docs.json",
+    "theme": "mint",
+    "name": "Toingg",
+    "colors": {
+      "primary": "#e9bf57",
+      "light": "#ffb600",
+      "dark": "#937018"
+    },
+    "favicon": "/favicon.svg",
+    "navigation": {
+      "tabs": [
+        {
+          "tab": "Guides",
+          "groups": [
+            {
+              "group": "Get Started",
+              "pages": [
+                "introduction",
+                "quickstart",
+                "development"
+              ]
+            },
+            {
+              "group": "Essentials",
+              "pages": [
+                "essentials/markdown",
+                "essentials/code",
+                "essentials/images",
+                "essentials/settings",
+                "essentials/navigation",
+                "essentials/reusable-snippets"
+              ]
+            }
+          ]
+        },
+        {
+          "tab": "API Reference",
+          "groups": [
+            {
+              "group": "API Documentation",
+              "pages": [
+                "api-reference/introduction"
+              ]
+            },
+            {
+              "group": "Campaign Endpoints",
+              "pages": [
+                "api-reference/endpoint/Campaign/getSupportedLanguage",
+                "api-reference/endpoint/Campaign/getSupportedVoices",
+                "api-reference/endpoint/Campaign/create",
+                "api-reference/endpoint/Campaign/updateCampaign",
+                "api-reference/endpoint/Campaign/getCampaigns",
+                "api-reference/endpoint/Campaign/getCampaignsTitleID",
+                "api-reference/endpoint/Campaign/getCampaignsFromID",
+                "api-reference/endpoint/Campaign/getCampaignsCostReport"
+              ]
+            },
+            {
+              "group": "Call Endpoints",
+              "pages": [
+                "api-reference/endpoint/Calls/create",
+                "api-reference/endpoint/Calls/getCallStatus",
+                "api-reference/endpoint/Calls/getTranscription",
+                "api-reference/endpoint/Calls/getPostCallAnalysis"
+              ]
+            }
+          ]
+        }
+      ],
+      "global": {
+        "anchors": [
+          {
+            "anchor": "Documentation",
+            "href": "https://mintlify.com/docs",
+            "icon": "book-open-cover"
+          },
+          {
+            "anchor": "Community",
+            "href": "https://x.com/Toingg_AI",
+            "icon": "x"
+          },
+          {
+            "anchor": "Integrations",
+            "href": "https://toingg.com/integrations",
+            "icon": "newspaper"
+          }
+        ]
+      }
+    },
+    "logo": {
+      "light": "/logo/light.svg",
+      "dark": "/logo/dark.svg"
+    },
+    "navbar": {
+      "links": [
+        {
+          "label": "Support",
+          "href": "mailto:hi@mintlify.com"
+        }
+      ],
+      "primary": {
+        "type": "button",
+        "label": "Dashboard",
+        "href": "https://dashboard.mintlify.com"
+      }
+    },
+    "footer": {
+      "socials": {
+        "x": "https://x.com/mintlify",
+        "github": "https://github.com/mintlify",
+        "linkedin": "https://linkedin.com/company/mintlify"
+      }
+    }
+  }

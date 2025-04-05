@@ -1,0 +1,23 @@
+---
+title: 'Update Contact Center'
+openapi: 'POST /update_twilio'
+---
+
+## Overview
+The "Update Contact Center" endpoint allows users to modify existing contact center configurations in Toingg. By sending a POST request to the `/update_twilio` endpoint, users can update various attributes of their contact center, such as the Twilio account SID, authentication token, and phone number. This functionality is essential for maintaining accurate and effective contact center integrations, ensuring that communication capabilities remain efficient and aligned with user needs. The endpoint supports updates to enhance the contact center's performance and alignment with evolving business requirements.
+
+#### Example cURL Request
+
+```bash
+curl -X 'POST' \
+  'https://api.toingg.com/api/v3/update_twilio' \
+  -H 'accept: application/json' \
+  -H 'Authorization: Bearer YOUR_ACCESS_TOKEN'
+  -H 'Content-Type: application/json' \
+  -d '{
+  "twilioAccountSid": "string",
+  "twilioAuthToken": "string",
+  "twilioPhoneNumber": "string",
+  "voiceProvider": "TWILIO"
+}'
+```

@@ -1,0 +1,16 @@
+---
+title: 'Get Monday info'
+openapi: 'GET /get_monday_info'
+---
+
+## Overview
+The "Get Monday Info" endpoint allows users to retrieve stored Monday.com credentials from their Toingg account. By sending a GET request to the `/get_monday_info` endpoint, users can access the API key and other relevant details necessary for integration with Monday.com. This functionality is crucial for ensuring seamless interaction between Toingg and Monday.com, enabling users to automate workflows and synchronize data effectively. The endpoint supports retrieval of credentials to enhance productivity and operational efficiency.
+
+#### Example cURL Request
+
+```bash
+curl -X 'GET' \
+'https://api.toingg.com/api/v3/get_monday_info' \
+-H 'accept: application/json' \
+ -H 'Authorization: Bearer YOUR_ACCESS_TOKEN'
+```

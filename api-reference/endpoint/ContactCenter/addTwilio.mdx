@@ -1,0 +1,23 @@
+---
+title: 'Add Contact Center Details'
+openapi: 'POST /add_twilio'
+---
+
+## Overview
+The "Add Contact Center Details" endpoint allows users to integrate either Twilio or Plivio contact center details into their Toingg account. By sending a POST request to the `/add_twilio` endpoint, users can add configurations such as account SID, authentication token, and phone number for Twilio, or equivalent details for Plivio. This functionality is crucial for setting up and managing contact center integrations, ensuring that communication capabilities are efficient and aligned with user needs. The endpoint supports seamless integration to enhance contact center operations and align with evolving business requirements.
+
+#### Example cURL Request
+
+```bash
+curl -X 'POST' \
+  'https://api.toingg.com/api/v3/add_twilio' \
+  -H 'accept: application/json' \
+  -H 'Authorization: Bearer YOUR_ACCESS_TOKEN'
+  -H 'Content-Type: application/json' \
+  -d '{
+  "twilioAccountSid": "string",
+  "twilioAuthToken": "string",
+  "twilioPhoneNumber": "string",
+  "voiceProvider": "TWILIO"
+}'
+```

@@ -1,0 +1,16 @@
+---
+title: 'Get Live call Status'
+openapi: 'GET /live_call_status    '
+---
+
+## Overview
+The "Get Live Call Status" endpoint allows users to retrieve the current status of any call in their Toingg account. By sending a GET request to the `/live_call_status` endpoint, users can access real-time information about a call's status using the call SID. This functionality is crucial for monitoring ongoing calls, ensuring that users can track call progress and manage communications effectively. The endpoint provides timely updates to support efficient call management and decision-making processes.
+
+#### Example cURL Request
+
+```bash
+curl -X GET \
+  'https://api.toingg.com/api/v3/twilio/live_call_status?callSid=YOUR_CALL_SID' \
+  -H 'accept: application/json' \
+  -H 'Authorization: Bearer YOUR_ACCESS_TOKEN'
+```

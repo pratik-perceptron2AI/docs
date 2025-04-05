@@ -1,0 +1,16 @@
+---
+title: 'Get Cal.com info'
+openapi: 'GET /get_cal_com_info'
+---
+
+## Overview
+The "Get Cal.com Info" endpoint allows users to retrieve information about Cal.com integrations added to their Toingg account. By sending a POST request to the `/get_cal_com_info` endpoint, users can access details such as meeting times, participants, and other relevant scheduling information. This functionality is crucial for reviewing and managing Cal.com calendar integrations, ensuring that scheduling is efficient and aligned with user needs.
+
+#### Example cURL Request
+
+```bash
+curl -X GET \
+ 'https://api.toingg.com/api/v3/meetings/get_cal_com_info?meeting_id=YOUR_MEETING_ID' \
+ -H 'accept: application/json' \
+ -H 'Authorization: Bearer YOUR_ACCESS_TOKEN'
+```

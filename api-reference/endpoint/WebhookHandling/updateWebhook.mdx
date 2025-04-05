@@ -1,0 +1,32 @@
+---
+title: 'Update Webhook'
+openapi: 'POST /update_webhook'
+---
+
+## Overview
+The "Update Webhook" endpoint allows users to modify existing webhook configurations in Toingg. By sending a POST request to the `/update_webhook` endpoint, users can update various attributes of a webhook, such as its name, event path, HTTP method, and any associated headers or JSON data. This functionality is essential for maintaining accurate and effective integrations with external systems, ensuring that webhooks continue to trigger the desired actions in response to specific events. The endpoint supports updates to enhance the webhook's performance and alignment with evolving business needs.
+
+#### Example cURL Request
+
+```bash
+curl -X POST \
+  https://api.toingg.com/api/v3/webhooks/YOUR_WEBHOOK_ID \
+  -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+  -d '{
+    "name": "NEW_WEBHOOK_NAME",
+    "path": "/new/event/path",
+    "method": "GET",
+    "description": "Updated description",
+    "headers": {
+      "X-Updated-Header": "new_header_value"
+    },
+    "params": {
+      "new_param": "new_value"
+    },
+    "json_data": {
+      "updated_field": "updated_value"
+    }
+  }'
+
+```

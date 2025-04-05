@@ -1,0 +1,16 @@
+---
+title: 'Update Webhook'
+openapi: 'GET /get_webhook'
+---
+
+## Overview
+The "Get Webhook" endpoint allows users to retrieve all existing webhook configurations in Toingg. By sending a POST request to the `/get_webhook` endpoint, users can access details of each webhook, including its name, event path, HTTP method, and any associated headers or JSON data. This functionality is crucial for reviewing and managing integrations with external systems, ensuring that webhooks are correctly configured to trigger the desired actions in response to specific events. The endpoint provides comprehensive information to support effective webhook management and alignment with business needs.
+
+#### Example cURL Request
+
+```bash
+curl -X GET \
+  'https://api.toingg.com/api/v3/get_webhook?webhookId=YOUR_WEBHOOK_ID' \
+ -H 'accept: application/json' \  
+-H 'Authorization: Bearer YOUR_ACCESS_TOKEN'
+```

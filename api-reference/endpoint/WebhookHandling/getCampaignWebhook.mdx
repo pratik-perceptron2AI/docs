@@ -1,0 +1,16 @@
+---
+title: 'Get Campaign Webhook'
+openapi: 'GET /get_campaingn_webhooks'
+---
+
+## Overview
+The "Get Campaign Webhooks" endpoint allows users to retrieve all webhook configurations associated with a specific campaign in Toingg. By sending a POST request to the `/get_campaingn_webhooks` endpoint, users can access details of each webhook, including its name, event path, HTTP method, and any associated headers or JSON data. This functionality is crucial for reviewing and managing campaign-specific integrations with external systems, ensuring that webhooks are correctly configured to trigger the desired actions in response to campaign events. The endpoint provides comprehensive information to support effective webhook management and alignment with campaign needs.
+
+#### Example cURL Request
+
+```bash
+curl -X GET \
+  'https://api.toingg.com/api/v3/get_campaingn_webhooks?campaignId=YOUR_CAMPAIGN_ID' \
+  -H 'accept: application/json' \
+  -H 'Authorization: Bearer YOUR_ACCESS_TOKEN'
+```

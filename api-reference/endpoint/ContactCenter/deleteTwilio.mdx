@@ -1,0 +1,16 @@
+---
+title: 'Delete Twilio'
+openapi: 'DELETE /delete_twilio'
+---
+
+## Overview
+The "Delete Contact Center Details" endpoint allows users to remove existing contact center configurations from their Toingg account. By sending a DELETE request to the `/delete_twilio` endpoint, users can delete details such as the Twilio account SID, authentication token, and phone number. This functionality is crucial for managing contact center integrations, ensuring that outdated or unnecessary configurations are efficiently removed to maintain optimal system performance and security. The endpoint supports deletions to streamline contact center management and align with evolving business requirements.
+
+#### Example cURL Request
+
+```bash
+curl -X 'DELETE' \
+  'https://api.toingg.com/api/v3/delete_twilio' \
+  -H 'accept: application/json' \
+  -H 'Authorization: Bearer YOUR_ACCESS_TOKEN'
+```

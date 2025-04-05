@@ -1,0 +1,22 @@
+---
+title: 'ADD CAL.COM'
+openapi: 'POST /add_cal_com_info'
+---
+
+## Overview
+The "Add Cal.com Calendar" endpoint allows users to integrate Cal.com calendar functionalities into their Toingg account to schedule meetings during calls. By sending a POST request to the `/add_cal_com_info` endpoint, users can add calendar details, such as meeting times, participants, and other relevant scheduling information. This functionality is crucial for enhancing communication and coordination during calls, ensuring that meetings are efficiently scheduled and managed. The endpoint supports seamless integration to improve scheduling capabilities and align with user needs.
+
+#### Example cURL Request
+
+```bash
+curl -X 'POST' \
+  'https://api.toingg.com/api/v3/add_cal_com_info' \
+  -H 'accept: application/json' \
+  -H 'Authorization: Bearer YOUR_ACCESS_TOKEN'
+  -H 'Content-Type: application/json' \
+  -d '{
+  "api_key": "string",
+  "eventId": 0,
+  "timezone": "Asia/Kolkata"
+}'
+```

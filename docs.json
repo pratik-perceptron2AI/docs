@@ -41,7 +41,54 @@
               "api-reference/endpoint/Calls/create",
               "api-reference/endpoint/Calls/getCallStatus",
               "api-reference/endpoint/Calls/getTranscription",
-              "api-reference/endpoint/Calls/getPostCallAnalysis"
+              "api-reference/endpoint/Calls/getPostCallAnalysis",
+              "api-reference/endpoint/Calls/liveCallStatus",
+              "api-reference/endpoint/RecordingHandling/getRecording"
+            ]
+          },
+          {
+            "group": "Contact Center",
+            "pages": [
+              "api-reference/endpoint/ContactCenter/addTwilio",
+              "api-reference/endpoint/ContactCenter/updateTwilio",
+              "api-reference/endpoint/ContactCenter/getTwilio",
+              "api-reference/endpoint/ContactCenter/deleteTwilio"
+            ]
+          },
+          {
+            "group": "Webhook Handling",
+            "pages": [
+              "api-reference/endpoint/WebhookHandling/addWebhook",
+              "api-reference/endpoint/WebhookHandling/updateWebhook",
+              "api-reference/endpoint/WebhookHandling/deleteWebhook",
+              "api-reference/endpoint/WebhookHandling/addWbhookCampaign",
+              "api-reference/endpoint/WebhookHandling/removeWebhookCampaign",
+              "api-reference/endpoint/WebhookHandling/getWebhook",
+              "api-reference/endpoint/WebhookHandling/getUserWebhooks",
+              "api-reference/endpoint/WebhookHandling/getCampaignWebhook"
+            ]
+          },
+          {
+            "group": "Mesage Handling",
+            "pages": [
+              "api-reference/endpoint/Messagehandling/getPlivioMessage",
+              "api-reference/endpoint/Messagehandling/getTwilioMessage"
+            ]
+          },
+          {
+            "group": "Meeting Handling",
+            "pages": [
+              "api-reference/endpoint/MeetingHandling/addCalCom",
+              "api-reference/endpoint/MeetingHandling/getCalCom",
+              "api-reference/endpoint/MeetingHandling/getCalComEvent"
+            ]
+          },
+          {
+            "group": "Monday Integration",
+            "pages": [
+              "api-reference/endpoint/MondayIntegration/addMondayinfo",
+              "api-reference/endpoint/MondayIntegration/getMondayInfo",
+              "api-reference/endpoint/MondayIntegration/removeMonday"
             ]
           }
         ]
@@ -49,11 +96,6 @@
     ],
     "global": {
       "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
         {
           "anchor": "Community",
           "href": "https://x.com/Toingg_AI",

@@ -1,0 +1,16 @@
+---
+title: 'Remove Monday Info'
+openapi: 'DELETE /remove_monday_info'
+---
+
+## Overview
+The "Remove Monday Info" endpoint allows users to delete existing Monday.com information from their Toingg account. By sending a DELETE request to the `/remove_monday_info` endpoint, users can remove stored Monday API keys and other related data. This functionality is crucial for managing integrations, ensuring that outdated or unnecessary information is efficiently removed to maintain optimal system performance and security. The endpoint supports deletions to streamline integration management and align with evolving business requirements.
+
+#### Example cURL Request
+
+```bash
+curl -X 'DELETE' \
+  'https://api.toingg.com/api/v3/remove_monday_info' \
+  -H 'accept: application/json' \
+ -H 'Authorization: Bearer YOUR_ACCESS_TOKEN'
+```

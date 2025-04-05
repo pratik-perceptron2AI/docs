@@ -1,0 +1,16 @@
+---
+title: 'Update Webhook'
+openapi: 'POST /add_webhook_campaingn'
+---
+
+## Overview
+The "Add Webhook to Campaign" endpoint allows users to attach a webhook to a specific campaign in Toingg. By sending a POST request to the `/add_webhook_campaign` endpoint, users can link a webhook to a campaign, enabling the webhook to trigger actions based on campaign-specific events. This integration is crucial for automating processes and ensuring that the campaign's activities are synchronized with external systems. Users can specify the campaign ID and webhook details to ensure seamless interaction and real-time updates.
+
+#### Example cURL Request
+
+```bash
+curl -X POST \
+  'https://api.toingg.com/api/v3/add_webhook_campaingn?webhookId=YOUR_WEBHOOK_ID&campaignId=YOUR_CAMPAIGN_ID' \
+ -H 'accept: application/json' \
+  -H 'Authorization: Bearer YOUR_ACCESS_TOKEN'
+```

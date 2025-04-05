@@ -1,4 +1,28 @@
 ---
-title: 'Get Supported Language'
+title: 'Get Campaigns'
 openapi: 'GET /get_campaigns'
 ---
+
+## Overview
+The "Get Campaigns" endpoint allows users to retrieve a list of all campaigns in Toingg. By sending a GET request to the `/get_campaigns` endpoint, users can obtain detailed information about each campaign, including its status, creation date, and other relevant details. This endpoint is useful for managing and reviewing campaign performance.
+
+#### Example cURL Request
+
+```bash
+curl -X 'GET' \
+  'https://api.toingg.com/api/v3/get_campaigns' \
+  -H 'accept: application/json' \
+  -H 'Authorization: Bearer yourBearerToken'
+```
+
+### Response
+
+The response will include the following fields for each campaign:
+
+- `campaignId`: A unique identifier for the campaign.
+- `name`: The name of the campaign.
+- `status`: The current status of the campaign (e.g., "active", "paused", "completed").
+- `creationDate`: The date and time when the campaign was created.
+- `details`: Additional details about the campaign, if any.
+
+These details help users manage and analyze their campaigns effectively, providing insights into their performance and status.

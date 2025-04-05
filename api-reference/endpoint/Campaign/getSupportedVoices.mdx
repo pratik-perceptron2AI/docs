@@ -2,3 +2,16 @@
 title: 'Get Supported Voices'
 openapi: 'GET /get_supported_voices'
 ---
+
+## Overview
+
+This endpoint retrieves the list of supported voices for campaign creation in Toingg. It allows users to see which voices are available for use in their campaigns, helping them to select the most appropriate voice for their needs.
+
+#### Example cURL Request
+
+```bash
+curl -X 'GET' \
+  'https://api.toingg.com/api/v3/get_supported_voices' \
+  -H 'accept: application/json' \
+  -H 'Authorization: Bearer yourBearerToken'
+```

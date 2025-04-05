@@ -1,4 +1,17 @@
 ---
-title: 'Get Supported Language'
+title: 'Get Campaign from ID'
 openapi: 'GET /get_campaign_from_id'
 ---
+
+## Overview
+
+This endpoint retrieves the details of a specific campaign in Toingg using its unique ID. It allows users to access comprehensive information about a campaign, which can be useful for identifying and managing campaigns based on their IDs.
+
+#### Example cURL Request
+
+```bash
+curl -X 'GET' \
+  'https://api.toingg.com/api/v3/get_campaign_from_id?campId=yourCampaignId' \
+  -H 'accept: application/json' \
+  -H 'Authorization: Bearer yourBearerToken'
+```

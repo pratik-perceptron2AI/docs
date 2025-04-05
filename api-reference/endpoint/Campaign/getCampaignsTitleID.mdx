@@ -1,4 +1,17 @@
 ---
-title: 'Get Supported Language'
+title: 'Get Campaign Title & ID'
 openapi: 'GET /get_campaigns_title_and_id'
 ---
+
+## Overview
+
+This endpoint retrieves the titles and IDs of all campaigns in Toingg. It allows users to quickly access the basic identifiers of campaigns, which can be useful for selecting specific campaigns for further actions or analysis.
+
+#### Example cURL Request
+
+```bash
+curl -X 'GET' \
+  'https://api.toingg.com/api/v3/get_campaigns_title_and_id' \
+  -H 'accept: application/json' \
+  -H 'Authorization: Bearer yourBearerToken'
+```

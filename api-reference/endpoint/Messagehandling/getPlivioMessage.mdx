@@ -1,0 +1,16 @@
+---
+title: 'Get Plivio Message'
+openapi: 'POST /get_plivo_message/{apiKey}/{campId}'
+---
+
+## Overview
+The "Add Plivio Message" endpoint allows users to integrate the Plivio messaging API into their Toingg account. By sending a POST request to the `/get_plivo_message/{apiKey}/{campId}` endpoint, users can add messaging capabilities, enabling them to send and receive messages through the Plivio platform. This functionality is crucial for enhancing communication within campaigns, ensuring that messaging is efficient and aligned with user needs. The endpoint supports seamless integration to improve messaging capabilities and align with evolving business requirements.
+
+#### Example cURL Request
+
+```bash
+curl -X POST \
+  'https://api.toingg.com/api/v3/message/get_plivo_message/YOUR_API_KEY/YOUR_CAMP_ID' \
+  -H 'accept: application/json' \
+  -H 'Authorization: Bearer YOUR_ACCESS_TOKEN'
+```

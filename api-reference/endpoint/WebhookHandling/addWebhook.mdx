@@ -1,0 +1,37 @@
+---
+title: 'Add Webhook'
+openapi: 'POST /add_webhook'
+---
+
+## Overview
+The "Add Webhook" endpoint is designed to enable Toingg to perform specific actions by triggering external systems during a call. By sending a POST request to the `/add_webhook` endpoint, users can configure the webhook to respond to particular events, such as call initiation or completion. This setup allows Toingg to interact with external services in real-time, facilitating actions like data updates, notifications, or other automated processes. Users can specify the webhook's name, event path, HTTP method, and any necessary headers or JSON data to ensure the webhook functions as intended, providing a seamless integration experience.
+
+#### Example cURL Request
+
+```bash
+curl -X POST \
+  https://api.toingg.com/api/v3/webhooks/add_webhook \
+  -H 'Content-Type: application/json' \
+  -H 'Authorization: Bearer YOUR_ACCESS_TOKEN' \
+  -d '{
+    "name": "YOUR_WEBHOOK_NAME",
+    "path": "/your/event/path",
+    "method": "POST",
+    "description": "Optional description of this webhook",
+    "headers": [
+      {
+        "name": "X-Custom-Header",
+        "value": "your_header_value"
+      }
+    ],
+    "params": [
+      {
+        "name": "api_key",
+        "value": "your_api_key"
+      }
+    ],
+    "json_data": {
+      "custom_field": "custom_value"
+    }
+  }'
+```

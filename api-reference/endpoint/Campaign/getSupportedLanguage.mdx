@@ -2,3 +2,16 @@
 title: 'Get Supported Language'
 openapi: 'GET /get_supported_languages'
 ---
+
+## Overview
+
+This endpoint retrieves the list of supported languages for campaign creation in Toingg. It allows users to see which languages are available for use in their campaigns, helping them to select the most appropriate language for their target audience.
+
+#### Example cURL Request
+
+```bash
+curl -X 'GET' \
+  'https://api.toingg.com/api/v3/get_supported_languages' \
+  -H 'accept: application/json' \
+  -H 'Authorization: Bearer yourBearerToken'
+```

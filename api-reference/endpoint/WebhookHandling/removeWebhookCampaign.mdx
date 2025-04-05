@@ -1,0 +1,16 @@
+---
+title: 'Remove Webhook Campaign'
+openapi: 'POST /remove_webhook_campaingn'
+---
+
+## Overview
+The "Remove Webhook from Campaign" endpoint allows users to detach a webhook from a specific campaign in Toingg. By sending a POST request to the `/remove_webhook_campaign` endpoint, users can remove the association between a webhook and a campaign, ensuring that the webhook no longer triggers actions based on campaign-specific events. This functionality is crucial for managing integrations and ensuring that only relevant webhooks are active for specific campaigns, thereby maintaining efficient and accurate operations.
+
+#### Example cURL Request
+
+```bash
+curl -X POST \
+  'https://api.toingg.com/api/v3/remove_webhook_campaingn?webhookId=YOUR_WEBHOOK_ID&campaignId=YOUR_CAMPAIGN_ID' \
+ -H 'accept: application/json' \
+  -H 'Authorization: Bearer YOUR_ACCESS_TOKEN'
+```

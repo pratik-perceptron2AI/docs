@@ -1,0 +1,16 @@
+---
+title: 'Update Webhook'
+openapi: 'POST /add_monday_info'
+---
+
+## Overview
+The "Add Monday API Key" endpoint allows users to integrate their Monday.com account with Toingg by adding an API key. By sending a POST request to the `/add_monday_info` endpoint, users can securely store their Monday API key, enabling seamless interaction between Toingg and Monday.com. This functionality is crucial for automating workflows and ensuring that data is synchronized between the two platforms, enhancing productivity and operational efficiency. The endpoint supports the integration process to align with evolving business requirements and improve task management capabilities.
+
+#### Example cURL Request
+
+```bash
+curl -X 'POST' \ 'https://api.toingg.com/api/v3/add_monday_info?apiKey=scx' \
+ -H 'accept: application/json' \
+ -H 'Authorization: Bearer YOUR_ACCESS_TOKEN'
+-d 'Your_MONDAY_API_KEY'
+```

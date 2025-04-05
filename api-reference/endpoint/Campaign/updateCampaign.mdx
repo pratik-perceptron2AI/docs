@@ -2,3 +2,60 @@
 title: 'Update Campaign'
 openapi: 'POST /update_campaign'
 ---
+
+## Overview
+
+The Update Campaign endpoint provides a robust solution for modifying existing AI-driven calling campaigns. This API enables developers to update key campaign attributes such as title, voice, language, and script. By utilizing this endpoint, developers can ensure that campaigns remain effective and aligned with current communication strategies.
+
+#### Example cURL Request
+
+```bash
+curl -X 'POST' \
+  'https://api.toingg.com/api/v3/update_campaign' \
+  -H 'accept: application/json' \
+  -H 'Authorization: Bearer yourBarerToken' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "campaignModelData": {
+    "title": "string",
+    "voice": "string",
+    "language": "string",
+    "script": "string",
+    "purpose": "string",
+    "knowledgeBase": "string",
+    "calendar": "string",
+    "firstLine": "string",
+    "flowName": "",
+    "systemPrompt": "",
+    "tone": "string",
+    "maxCallTimeout": 1,
+    "inactiveCallTimeout": 15,
+    "postCallAnalysis": false,
+    "postCallAnalysisSchema": {},
+    "totalCallTime": 0,
+    "totalNumCall": 0,
+    "totalSpent": 0,
+    "averageCallCost": 0,
+    "isFreeflow": true
+  },
+  "campId": "string"
+}'
+```
+
+- `title`: Specifies the name of the campaign, helping users identify and manage multiple campaigns.
+- `voice`: Determines the AI voice used during calls, allowing customization to match the campaign's tone and audience.
+- `language`: Sets the language for the campaign, ensuring communication is clear and appropriate for the target audience.
+- `script`: Provides the dialogue or script the AI will follow during calls, essential for maintaining consistency and achieving campaign objectives.
+- `purpose`: Describes the campaign's goal, guiding the AI's interactions and ensuring alignment with business objectives.
+- `knowledgeBase`: Links to a repository of information the AI can use to answer questions or provide details during calls.
+- `calendar`: Integrates scheduling capabilities, enabling the AI to manage appointments or follow-ups.
+- `firstLine`: Sets the initial line or greeting used by the AI, creating a strong first impression.
+- `flowName`: Identifies the specific call flow or sequence of interactions, allowing for tailored customer experiences.
+- `systemPrompt`: Provides additional instructions or context for the AI, enhancing its ability to handle complex scenarios.
+- `tone`: Defines the emotional tone of the AI's voice, ensuring it aligns with the campaign's branding and audience expectations.
+- `maxCallTimeout`: Specifies the maximum duration for a call, helping manage time and resources effectively.
+- `inactiveCallTimeout`: Sets the timeout for inactive calls, ensuring efficient use of AI resources.
+- `postCallAnalysis`: Enables or disables post-call analysis, providing insights into call performance and outcomes.
+- `postCallAnalysisSchema`: Defines the structure for analyzing post-call data, allowing for detailed reporting and optimization.
+- `totalCallTime`, `totalNumCall`, `totalSpent`, `averageCallCost`: Track and report on campaign metrics, offering insights into performance and cost-effectiveness.
+- `isFreeflow`: Indicates whether the AI can deviate from the script, allowing for more natural and adaptive interactions.

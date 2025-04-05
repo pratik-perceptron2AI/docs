@@ -1,0 +1,16 @@
+---
+title: 'Get Cal.com Events'
+openapi: 'GET /get_cal_com_events'
+---
+
+## Overview
+The "Get Cal.com Events" endpoint allows users to retrieve information about events from their Cal.com integration in Toingg. By sending a POST request to the `/get_cal_com_events` endpoint, users can access details such as event times, participants, and other relevant scheduling information. This functionality is crucial for reviewing and managing Cal.com events, ensuring that scheduling is efficient and aligned with user needs. The endpoint provides comprehensive event information to support effective calendar management and integration with external systems.
+
+#### Example cURL Request
+
+```bash
+curl -X GET \
+  'https://api.toingg.com/api/v3/meetings/get_cal_com_events?apiKey=YOUR_API_KEY' \
+ -H 'accept: application/json' \
+  -H 'Authorization: Bearer YOUR_ACCESS_TOKEN'
+```

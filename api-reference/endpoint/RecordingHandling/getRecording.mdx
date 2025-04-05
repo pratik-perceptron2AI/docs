@@ -1,0 +1,16 @@
+---
+title: 'Get Recording'
+openapi: 'POST /get_file/{fileName}'
+---
+
+## Overview
+The "Get Recording" endpoint allows users to retrieve call recordings from their Toingg account. By sending a POST request to the `/get_file/{fileName}` endpoint, users can access specific call recordings by specifying the file name. This functionality is crucial for reviewing and analyzing call content, ensuring that recordings are easily accessible for quality assurance, training, or compliance purposes. The endpoint supports efficient retrieval of recordings to enhance user experience and meet business requirements.
+
+#### Example cURL Request
+
+```bash
+curl -X GET \
+  'https://api.toingg.com/api/v3/recording/get_file/YOUR_FILE_NAME' \
+  -H 'accept: application/json' \
+  -H 'Authorization: Bearer YOUR_ACCESS_TOKEN'
+```

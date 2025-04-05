@@ -2,3 +2,30 @@
 title: 'Get Call Status'
 openapi: 'GET /call_status'
 ---
+
+
+## Overview
+The "Get Call Status" endpoint allows users to retrieve the current status of a specific call in Toingg. By sending a GET request to the `/call_status` endpoint, users can obtain detailed information about the call's progress, including its current state, duration, and any errors encountered. This endpoint is essential for monitoring call performance and ensuring that campaigns are running smoothly.
+
+#### Example cURL Request
+
+```bash
+curl -X 'GET' \
+  'https://api.toingg.com/api/v3/call_status?callId=yourCallId' \
+  -H 'accept: application/json' \
+  -H 'Authorization: Bearer yourBearerToken'
+```
+
+- `callId`: A unique identifier for the call whose status is being queried. This parameter is required to fetch the specific call's details.
+
+### Response
+
+The response will include the following fields:
+
+- `status`: Indicates the current status of the call (e.g., "in-progress", "completed", "failed").
+- `duration`: The total time the call has been active, measured in seconds.
+- `startTime`: The timestamp when the call started.
+- `endTime`: The timestamp when the call ended, if applicable.
+- `error`: Provides details of any errors encountered during the call, if any.
+
+These details help users track the progress and outcome of their calls, allowing for real-time monitoring and troubleshooting.

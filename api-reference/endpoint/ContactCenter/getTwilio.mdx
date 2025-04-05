@@ -1,0 +1,16 @@
+---
+title: 'Get Details'
+openapi: 'POST /get_twilio'
+---
+
+## Overview
+The "Get Details" endpoint allows users to retrieve information about the contact center integrated into their Toingg account. By sending a POST request to the `/get_twilio` endpoint, users can access details such as contact center configurations, status, and other relevant information. This functionality is crucial for reviewing and managing contact center integrations, ensuring that operations are efficient and aligned with user needs. The endpoint provides comprehensive details to support effective contact center management and integration with external systems.
+
+#### Example cURL Request
+
+```bash
+curl -X 'GET' \
+  'https://api.toingg.com/api/v3/get_twilio' \
+  -H 'accept: application/json' \
+  -H 'Authorization: Bearer YOUR_ACCESS_TOKEN'
+```

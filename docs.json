@@ -98,7 +98,7 @@
       "anchors": [
         {
           "anchor": "Community",
-          "href": "https://x.com/Toingg_AI",
+          "href": "https://chat.whatsapp.com/KuQFp64Y7wb09i3lerz2Wj",
           "icon": "x"
         },
         {
@@ -117,13 +117,13 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:contact@toingg.com"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://app.toingg.com/dashboard"
     }
   },
   "footer": {

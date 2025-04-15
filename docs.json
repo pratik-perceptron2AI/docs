@@ -90,6 +90,25 @@
               "api-reference/endpoint/MondayIntegration/getMondayInfo",
               "api-reference/endpoint/MondayIntegration/removeMonday"
             ]
+          },
+          {
+            "group": "Instagram Integration",
+            "pages": [
+              "api-reference/endpoint/InstagramHandling/addInstagramInfo",
+              "api-reference/endpoint/InstagramHandling/getInstagramInfo",
+              "api-reference/endpoint/InstagramHandling/instagramWebhook",
+              "api-reference/endpoint/InstagramHandling/instagramWebhookTokenVerify",
+              "api-reference/endpoint/InstagramHandling/removeinstagramInfo"
+            ]
+          },
+          {
+            "group": "Whatsapp Integration",
+            "pages": [
+              "api-reference/endpoint/WhatsappHandling/addWhatsappinfo",
+              "api-reference/endpoint/WhatsappHandling/getWhatsappInfo",
+              "api-reference/endpoint/WhatsappHandling/whatsappWebhook",
+              "api-reference/endpoint/WhatsappHandling/removeWhatsappInfo"
+            ]
           }
         ]
       }

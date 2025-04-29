@@ -47,6 +47,15 @@
             ]
           },
           {
+            "group": "Text Pipeline",
+            "pages": [
+              "api-reference/endpoint/Campaign/textPipelineConfiguration",
+              "api-reference/endpoint/Campaign/textPipelineConfigurationPost",
+              "api-reference/endpoint/Campaign/deleteTextPipelineConfiguration",
+              "api-reference/endpoint/Campaign/testTextPostWebhook"
+            ]
+          },
+          {
             "group": "Contact Center",
             "pages": [
               "api-reference/endpoint/ContactCenter/addTwilio",
@@ -72,7 +81,8 @@
             "group": "Mesage Handling",
             "pages": [
               "api-reference/endpoint/Messagehandling/getPlivioMessage",
-              "api-reference/endpoint/Messagehandling/getTwilioMessage"
+              "api-reference/endpoint/Messagehandling/getTwilioMessage",
+              "api-reference/endpoint/Messagehandling/testmessagepipeline"
             ]
           },
           {

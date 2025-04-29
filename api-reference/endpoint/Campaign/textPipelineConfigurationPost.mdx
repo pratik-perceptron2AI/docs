@@ -1,0 +1,13 @@
+---
+title: 'ADD Text Pipeline Configuration'
+openapi: 'POST /text_pipeline_configuration'
+---
+
+## Overview
+The "Text Pipeline Configuration" endpoint is used to add or configure the settings for a specific campaign's text pipeline. By sending a POST request to the `/text_pipeline_configuration` endpoint, users can provide the campaign ID as a parameter and include the following details in the request body: 
+
+- A "messageDelay", which can be set from range of "1" to "10".
+- A "mexRetry" count, which can be set from range of "1" to "5".
+- A "retryDelay", which can be set from range of "1" to  "5".
+- A "postWebhook" URL, The URl for your Messaging Webhook.
+- A "gole", described What is the ourpose of this.

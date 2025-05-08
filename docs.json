@@ -119,6 +119,14 @@
               "api-reference/endpoint/WhatsappHandling/whatsappWebhook",
               "api-reference/endpoint/WhatsappHandling/removeWhatsappInfo"
             ]
+          },
+          {
+            "group": "ERP Next Integration",
+            "pages": [
+              "api-reference/endpoint/erpNext/addERPNextinfo",
+              "api-reference/endpoint/erpNext/getERPNextinfo",
+              "api-reference/endpoint/erpNext/removeERPNextinfo"
+            ]
           }
         ]
       }

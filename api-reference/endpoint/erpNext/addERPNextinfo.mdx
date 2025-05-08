@@ -1,0 +1,17 @@
+---
+title: 'Add ERP next Info'
+openapi: 'POST /add_erpnext_info'
+---
+
+## Overview
+The "add_erpnext_info" endpoint allows users to integrate their ERP Next system with Toingg by securely submitting the necessary connection details. To add an ERP Next configuration, send a POST request to the `/add_erpnext_info` endpoint with a JSON body that includes the following fields:
+
+```json
+{
+  "erpUrl": "string",
+  "apiKey": "string",
+  "secret": "string"
+}
+```
+
+Providing these credentials enables seamless integration, ensuring that your ERP Next data is securely connected and accessible within Toingg for efficient workflow and data management.

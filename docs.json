@@ -43,7 +43,13 @@
               "api-reference/endpoint/Calls/getTranscription",
               "api-reference/endpoint/Calls/getPostCallAnalysis",
               "api-reference/endpoint/Calls/liveCallStatus",
-              "api-reference/endpoint/RecordingHandling/getRecording"
+              "api-reference/endpoint/RecordingHandling/getRecording",
+              "api-reference/endpoint/Calls/getBatches",
+              "api-reference/endpoint/Calls/getBatchesCampaign",
+              "api-reference/endpoint/Calls/getCallLogsForBatch",
+              "api-reference/endpoint/Calls/getCallLogsForCampaign",
+              "api-reference/endpoint/Calls/getCallLogsUser",
+              "api-reference/endpoint/Calls/putCancleBatch"
             ]
           },
           {
@@ -117,6 +123,7 @@
               "api-reference/endpoint/WhatsappHandling/addWhatsappinfo",
               "api-reference/endpoint/WhatsappHandling/getWhatsappInfo",
               "api-reference/endpoint/WhatsappHandling/whatsappWebhook",
+              "api-reference/endpoint/WhatsappHandling/whatsappWebhookTokenVerify",
               "api-reference/endpoint/WhatsappHandling/removeWhatsappInfo"
             ]
           },

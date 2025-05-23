@@ -1,0 +1,4 @@
+---
+title: 'Send Whatsapp Templet'
+openapi: 'GET /send_whatsapp_template'
+---

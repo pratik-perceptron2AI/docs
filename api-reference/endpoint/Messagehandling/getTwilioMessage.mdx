@@ -1,16 +1,7 @@
 ---
-title: 'Update Webhook'
+title: 'Get Twilio Message'
 openapi: 'POST /get_twilio_message/{apiKey}/{campId}'
 ---
 
 ## Overview
-The "Add Twilio API Key" endpoint allows users to integrate their Twilio API key into their Toingg account. By sending a POST request to the `/get_twilio_message/{apiKey}/{campId}` endpoint, users can securely add their Twilio API key, enabling messaging capabilities through the Twilio platform. This functionality is crucial for enhancing communication within campaigns, ensuring that messaging is efficient and aligned with user needs. The endpoint supports seamless integration to improve messaging capabilities and align with evolving business requirements.
-
-#### Example cURL Request
-
-```bash
-curl -X POST \
-  'https://api.toingg.com/api/v3/message/get_twilio_message/YOUR_API_KEY/YOUR_CAMP_ID' \
-  -H 'accept: application/json' \
-  -H 'Authorization: Bearer YOUR_ACCESS_TOKEN'
-```
+The "Get Twilio Message" endpoint allows users to retrieve messages from their Toingg account. By sending a POST request to the `/get_twilio_message/{apiKey}/{campId}` endpoint, users can access specific messages by specifying the API key and campaign ID. This functionality is crucial for reviewing and analyzing message content, ensuring that messages are easily accessible for quality assurance, training, or compliance purposes. The endpoint supports efficient retrieval of messages to enhance user experience and meet business requirements.

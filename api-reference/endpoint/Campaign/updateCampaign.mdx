@@ -7,40 +7,7 @@ openapi: 'POST /update_campaign'
 
 The Update Campaign endpoint provides a robust solution for modifying existing AI-driven calling campaigns. This API enables developers to update key campaign attributes such as title, voice, language, and script. By utilizing this endpoint, developers can ensure that campaigns remain effective and aligned with current communication strategies.
 
-#### Example cURL Request
-
-```bash
-curl -X 'POST' \
-  'https://api.toingg.com/api/v3/update_campaign' \
-  -H 'accept: application/json' \
-  -H 'Authorization: Bearer yourBarerToken' \
-  -H 'Content-Type: application/json' \
-  -d '{
-  "campaignModelData": {
-    "title": "string",
-    "voice": "string",
-    "language": "string",
-    "script": "string",
-    "purpose": "string",
-    "knowledgeBase": "string",
-    "calendar": "string",
-    "firstLine": "string",
-    "flowName": "",
-    "systemPrompt": "",
-    "tone": "string",
-    "maxCallTimeout": 1,
-    "inactiveCallTimeout": 15,
-    "postCallAnalysis": false,
-    "postCallAnalysisSchema": {},
-    "totalCallTime": 0,
-    "totalNumCall": 0,
-    "totalSpent": 0,
-    "averageCallCost": 0,
-    "isFreeflow": true
-  },
-  "campId": "string"
-}'
-```
+### Parameters
 
 - `title`: Specifies the name of the campaign, helping users identify and manage multiple campaigns.
 - `voice`: Determines the AI voice used during calls, allowing customization to match the campaign's tone and audience.

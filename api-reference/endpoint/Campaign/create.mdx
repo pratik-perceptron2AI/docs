@@ -6,37 +6,7 @@ openapi: 'POST /create_campaign'
 ## Overview
 The "Create Campaign" endpoint is designed to help users efficiently set up a new AI-driven calling campaign in Toingg. By sending a POST request to the `/create_campaign` endpoint, users can specify various parameters such as `title`, `voice`, `language`, and more. These parameters are crucial in defining the campaign's unique characteristics, including its script, purpose, and call handling settings. Additionally, the endpoint offers features for post-call analysis and cost tracking, making it an essential tool for optimizing AI calling strategies.
 
-#### Example cURL Request
-
-```bash
-curl -X 'POST' \
-  'https://api.toingg.com/api/v3/create_campaign' \
-  -H 'accept: application/json' \
-  -H 'Authorization: Bearer yourBarerToken' \
-  -H 'Content-Type: application/json' \
-  -d '{
-  "title": "string",
-  "voice": "string",
-  "language": "string",
-  "script": "string",
-  "purpose": "string",
-  "knowledgeBase": "string",
-  "calendar": "string",
-  "firstLine": "string",
-  "flowName": "",
-  "systemPrompt": "",
-  "tone": "string",
-  "maxCallTimeout": 1,
-  "inactiveCallTimeout": 15,
-  "postCallAnalysis": false,
-  "postCallAnalysisSchema": {},
-  "totalCallTime": 0,
-  "totalNumCall": 0,
-  "totalSpent": 0,
-  "averageCallCost": 0,
-  "isFreeflow": true
-}'
-```
+### Parameters
 
 - `title`: Specifies the name of the campaign, helping users identify and manage multiple campaigns.
 - `voice`: Determines the AI voice used during calls, allowing customization to match the campaign's tone and audience.

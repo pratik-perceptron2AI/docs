@@ -2,3 +2,34 @@
 title: 'Make Call'
 openapi: 'POST /make_call'
 ---
+
+## Overview
+Initiate a new call by sending a POST request to the `/make_call` endpoint. This allows you to schedule and execute calls with various configuration options.
+
+## Request
+
+### Request Body
+```json
+{
+  "name": "string",
+  "phoneNumber": "string",
+  "campID": "string",
+  "whisperAsr": boolean,
+  "startMessage": boolean,
+  "clearMemory": boolean,
+  "extraParams": {}
+}
+```
+
+### Parameters
+
+| Parameter     | Type    | Required | Description                             |
+|---------------|---------|----------|-----------------------------------------|
+| name          | string  | Yes      | Name of the receiver                    |
+| phoneNumber   | string  | Yes      | Phone number of the receiver            |
+| campID        | string  | Yes      | Campaign ID                             |
+| whisperAsr    | boolean | No       | Enable/disable whisper ASR              |
+| startMessage  | boolean | No       | Whether to start with a message         |
+| clearMemory   | boolean | No       | Clear previous conversation context     |
+| extraParams   | object  | No       | Additional parameters for the call      |
+
